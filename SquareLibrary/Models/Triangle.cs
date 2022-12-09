@@ -1,6 +1,4 @@
-﻿using SquareLibrary.Models.Abstractions;
-
-namespace SquareLibrary.Models;
+﻿namespace SquareLibrary.Models;
 public class Triangle : FigureBase
 {
     private double a { get; }

@@ -1,7 +1,4 @@
-﻿using SquareLibrary.Models.Abstractions;
-
-namespace SquareLibrary.Models;
-
+﻿namespace SquareLibrary.Models;
 public class Circle : FigureBase
 {
     private double radius { get; }
