@@ -1,5 +1,5 @@
 ﻿namespace SquareLibrary.Models.Abstractions;
-public abstract class BaseFigure
+public abstract class FigureBase
 {
     internal abstract double CalculateSquare();
 }

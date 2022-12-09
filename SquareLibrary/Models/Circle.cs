@@ -2,7 +2,7 @@
 
 namespace SquareLibrary.Models;
 
-public class Circle : BaseFigure
+public class Circle : FigureBase
 {
     private double radius { get; }
 
