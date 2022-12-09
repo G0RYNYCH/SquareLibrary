@@ -1,5 +1,5 @@
 ﻿namespace SquareLibrary.Services;
-public class SquareCalclator : ISquareCalculator
+public class SquareCalculator : ISquareCalculator
 {
     public double Calculate(FigureBase figure) => figure.CalculateSquare();
 }
