@@ -1,7 +1,7 @@
 ﻿using SquareLibrary.Models.Abstractions;
 
 namespace SquareLibrary.Models;
-public class Triangle : BaseFIgure
+public class Triangle : BaseFigure
 {
     private double a { get; }
     private double b { get; }
