@@ -1,4 +1,5 @@
 ﻿namespace SquareLibrary.Models;
+
 public class Circle : FigureBase
 {
     private double radius { get; }

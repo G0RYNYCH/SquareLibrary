@@ -1,10 +1,11 @@
 ﻿namespace SquareLibrary.Models;
+
 public class Triangle : FigureBase
 {
-    private double a { get; }
-    private double b { get; }
-    private double c { get; }
-
+    private double A { get; }
+    private double B { get; }
+    private double C { get; }
+    
     public Triangle(double a, double b, double c)
     {
         var validationException = ValidateConstructorParams(a, b, c);
@@ -12,9 +13,9 @@ public class Triangle : FigureBase
         if (validationException != null)
             throw validationException;
 
-        this.a = a;
-        this.b = b;
-        this.c = c;
+        A = a;
+        B = b;
+        C = c;
     }
 
     internal override double CalculateSquare()
@@ -22,10 +23,10 @@ public class Triangle : FigureBase
         var perimeter = CalculatePerimeter();
         var halfPerimeter = perimeter / 2;
 
-        return Math.Sqrt(halfPerimeter * (halfPerimeter - a) * (halfPerimeter - b) * (halfPerimeter - c));
+        return Math.Sqrt(halfPerimeter * (halfPerimeter - A) * (halfPerimeter - B) * (halfPerimeter - C));
     }
 
-    private double CalculatePerimeter() => a + b + c;
+    private double CalculatePerimeter() => A + B + C;
 
     private Exception? ValidateConstructorParams(double a, double b, double c)
     {
@@ -36,11 +37,11 @@ public class Triangle : FigureBase
 
         return ValidateInequality(a, b, c);
     }
-
+    
     private Exception? ValidateSidesLength(double a, double b, double c)
     {
         var maxExceptionCount = 4;
-        var exceptions = new List<Exception?>(maxExceptionCount);
+        var exceptions = new List<Exception>(maxExceptionCount);
 
         Span<double> sides = stackalloc[] { a, b, c };
 
@@ -55,7 +56,7 @@ public class Triangle : FigureBase
         if (exceptions.Count == 0)
             return null;
 
-        return exceptions.Count == 1 ? exceptions.First() : new AggregateException(exceptions!);
+        return exceptions.Count == 1 ? exceptions.First() : new AggregateException(exceptions);
     }
 
     private Exception? ValidateSideLength(double side)
