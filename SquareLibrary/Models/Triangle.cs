@@ -5,7 +5,13 @@ public class Triangle : FigureBase
     private double A { get; }
     private double B { get; }
     private double C { get; }
-    
+
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Triangle"/> class.
+    /// </summary>
+    /// <param name="a">a.</param>
+    /// <param name="b">The b.</param>
+    /// <param name="c">The c.</param>
     public Triangle(double a, double b, double c)
     {
         var validationException = ValidateConstructorParams(a, b, c);

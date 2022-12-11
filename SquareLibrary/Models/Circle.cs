@@ -4,6 +4,11 @@ public class Circle : FigureBase
 {
     private double radius { get; }
 
+    /// <summary>
+    /// Initializes a new instance of the <see cref="Circle"/> class.
+    /// </summary>
+    /// <param name="radius">The radius.</param>
+    /// <exception cref="System.ArgumentException">Radius cannot be less or equal 0. Provided value: {radius}</exception>
     public Circle(double radius)
     {
         if (radius <= 0)
