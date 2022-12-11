@@ -10,8 +10,8 @@ public class Triangle : FigureBase
     /// Initializes a new instance of the <see cref="Triangle"/> class.
     /// </summary>
     /// <param name="a">a.</param>
-    /// <param name="b">The b.</param>
-    /// <param name="c">The c.</param>
+    /// <param name="b">b.</param>
+    /// <param name="c">c.</param>
     public Triangle(double a, double b, double c)
     {
         var validationException = ValidateConstructorParams(a, b, c);
@@ -36,10 +36,10 @@ public class Triangle : FigureBase
 
     private Exception? ValidateConstructorParams(double a, double b, double c)
     {
-        var sidesLenthEcxeption = ValidateSidesLength(a, b, c);
+        var sidesLengthException = ValidateSidesLength(a, b, c);
 
-        if (sidesLenthEcxeption != null)
-            return sidesLenthEcxeption;
+        if (sidesLengthException != null)
+            return sidesLengthException;
 
         return ValidateInequality(a, b, c);
     }
@@ -68,7 +68,7 @@ public class Triangle : FigureBase
     private Exception? ValidateSideLength(double side)
     {
         if (side <= 0)
-            return new AggregateException($"Triangle side cannot be less or equal 0. Provided value: {side}");
+            return new ArgumentException($"Triangle side cannot be less or equal 0. Provided value: {side}.");
 
         return null;
     }
