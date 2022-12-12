@@ -7,10 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareLibrary", "SquareLibr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareLibrary.Tests", "SquareLibrary.Tests\SquareLibrary.Tests.csproj", "{08695950-3B19-48C0-93CE-77F6F85FFBE5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 1", "Task 1", "{4565F067-B128-4F2A-AA29-CF1D86B2C64C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task 2", "Task 2", "{94B48BDA-0749-4E2A-A571-9544031CAB60}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,10 +24,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{9850A97B-F0A6-43DE-A0D0-FFBE00DD98DA} = {4565F067-B128-4F2A-AA29-CF1D86B2C64C}
-		{08695950-3B19-48C0-93CE-77F6F85FFBE5} = {4565F067-B128-4F2A-AA29-CF1D86B2C64C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E56043E5-A474-4633-825B-BF7B813B3309}
