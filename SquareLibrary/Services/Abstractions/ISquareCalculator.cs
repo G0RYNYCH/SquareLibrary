@@ -6,6 +6,5 @@ public interface ISquareCalculator
     /// Calculates the specified figure.
     /// </summary>
     /// <param name="figure">figure.</param>
-    /// <returns></returns>
     double Calculate(FigureBase figure);
 }
